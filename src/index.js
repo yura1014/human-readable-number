@@ -1,5 +1,5 @@
 module.exports = function toReadable (number) {
-   numbArray = String(numb).split("");
+   numbArray = String(number).split("");
   console.log(numbArray);
   let output = "";
   numbArray.forEach((element) => {
