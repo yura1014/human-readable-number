@@ -42,6 +42,6 @@ module.exports = function toReadable (number) {
     arr.splice(1, 0, "hundred");
     arr[2] = arr[2] + "ty";
   }
-  if (arr.length === 4) arr[0] = arr[0] + "ty";
+  if (arr.length === 2) arr[0] = arr[0] + "ty";
   return arr.join(" ");
 }
