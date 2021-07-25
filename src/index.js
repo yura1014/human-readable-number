@@ -1,5 +1,5 @@
 module.exports = function toReadable (number) {
-   let str = String(number);
+     let str = String(number);
   let output = "";
   // if (str.length === 2 && str[0] === "1") {
   //   switch (str) {
@@ -120,6 +120,9 @@ module.exports = function toReadable (number) {
     if (arr[2] === "nine") {
       arr[2] = "ninety";
     }
+    if (arr[2] === "zero") {
+      arr[2] = "";
+    }
   }
   if (arr.length === 3) {
     arr.pop();
@@ -147,7 +150,10 @@ module.exports = function toReadable (number) {
     if (arr[0] === "nine") {
       arr[0] = "ninety";
     }
+    if (arr[1] === "zero") {
+      arr[1] = "";
+    }
   }
-  if (arr.length > 1 && output.endsWith("zero ")) arr.pop();
+  //if (arr.length === 3 && output.endsWith("zero ")) arr.pop();
   return arr.join(" ");
 }
