@@ -1,5 +1,5 @@
 module.exports = function toReadable (number) {
-  let str = String(number);
+   let str = String(number);
   let output = "";
   // if (str.length === 2 && str[0] === "1") {
   //   switch (str) {
@@ -93,7 +93,7 @@ module.exports = function toReadable (number) {
 
   arr = output.split(" ");
 
-  console.log(arr);
+  console.log(arr.length);
   if (arr.length === 5) {
     arr.pop();
     if (arr[2] === "two") {
@@ -121,5 +121,33 @@ module.exports = function toReadable (number) {
       arr[2] = "ninety";
     }
   }
+  if (arr.length === 3) {
+    arr.pop();
+    if (arr[0] === "two") {
+      arr[0] = "twenty";
+    }
+    if (arr[0] === "three") {
+      arr[0] = "thirty";
+    }
+    if (arr[0] === "four") {
+      arr[0] = "fourty";
+    }
+    if (arr[0] === "five") {
+      arr[0] = "fifty";
+    }
+    if (arr[0] === "six") {
+      arr[0] = "sixty";
+    }
+    if (arr[0] === "seven") {
+      arr[0] = "seventy";
+    }
+    if (arr[0] === "eight") {
+      arr[0] = "eigthty";
+    }
+    if (arr[0] === "nine") {
+      arr[0] = "ninety";
+    }
+  }
+  if (arr.length > 1 && output.endsWith("zero ")) arr.pop();
   return arr.join(" ");
 }
