@@ -1,5 +1,5 @@
 module.exports = function toReadable (number) {
-     let str = String(number);
+      let str = String(number);
   let output = "";
   // if (str.length === 2 && str[0] === "1") {
   //   switch (str) {
@@ -125,7 +125,6 @@ module.exports = function toReadable (number) {
     }
   }
   if (arr.length === 3) {
-    arr.pop();
     if (arr[0] === "two") {
       arr[0] = "twenty";
     }
