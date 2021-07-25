@@ -1,5 +1,5 @@
 module.exports = function toReadable (number) {
-      let str = String(number);
+       let str = String(number);
   let output = "";
   // if (str.length === 2 && str[0] === "1") {
   //   switch (str) {
@@ -103,7 +103,7 @@ module.exports = function toReadable (number) {
       arr[2] = "thirty";
     }
     if (arr[2] === "four") {
-      arr[2] = "fourty";
+      arr[2] = "forty";
     }
     if (arr[2] === "five") {
       arr[2] = "fifty";
@@ -132,7 +132,7 @@ module.exports = function toReadable (number) {
       arr[0] = "thirty";
     }
     if (arr[0] === "four") {
-      arr[0] = "fourty";
+      arr[0] = "forty";
     }
     if (arr[0] === "five") {
       arr[0] = "fifty";
