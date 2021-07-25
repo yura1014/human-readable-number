@@ -1,5 +1,5 @@
 module.exports = function toReadable (number) {
-   numbArray = String(number).split("");
+  numbArray = String(number).split("");
   console.log(numbArray);
   let output = "";
   numbArray.forEach((element) => {
@@ -36,5 +36,11 @@ module.exports = function toReadable (number) {
         break;
     }
   });
-  return output;
+  let arr = output.split(" ");
+  if (arr.length === 4) {
+    arr.splice(1, 0, "hundred");
+    arr[2] = arr[2] + "ty";
+  }
+  if (arr.length === 3) arr[0] = arr[0] + "ty";
+  return arr.join(" ");
 }
